@@ -67,7 +67,7 @@ export default function ProductPage() {
                                                     <div className="text-center py-4">
                                                         <button
                                                             type="button"
-                                                            class="btn btn-warning">
+                                                            className="btn btn-warning">
                                                             Acquista
                                                         </button>
                                                     </div>
