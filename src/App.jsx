@@ -1,12 +1,15 @@
-import { BrowserRouter, Routes, Rout } from "react-router-dom";
-import Header from "./components/Header";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import DefaultLayout from "./layout/DefaultLayout";
 
 function App() {
     return (
         <>
             <BrowserRouter>
                 <Routes>
-                    <Route path="/" Component={}/>
+                    <Route Component={DefaultLayout}>
+                        <Route path="/" Component={HomePage} />
+                    </Route>
                 </Routes>
             </BrowserRouter>
         </>
