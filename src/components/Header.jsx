@@ -22,14 +22,14 @@ export default function Header() {
                         className="collapse navbar-collapse"
                         id="navbarNavAltMarkup">
                         <div className="navbar-nav">
-                            <NavLink className="nav-link" to="#">
+                            <NavLink className="nav-link" to="/">
                                 Home
                             </NavLink>
-                            <NavLink className="nav-link" to="#">
-                                Features
+                            <NavLink className="nav-link" to="/AboutUs">
+                                About us
                             </NavLink>
-                            <NavLink className="nav-link" to="#">
-                                Pricing
+                            <NavLink className="nav-link" to="/Products">
+                                Products
                             </NavLink>
                         </div>
                     </div>
