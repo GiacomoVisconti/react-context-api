@@ -3,6 +3,7 @@ import HomePage from "./pages/HomePage";
 import DefaultLayout from "./layout/DefaultLayout";
 import AboutusPage from "./pages/AboutusPage";
 import ProductPage from "./pages/ProductsPage";
+import SingleProductPage from "./pages/SingleProductPage";
 
 function App() {
     return (
@@ -13,6 +14,7 @@ function App() {
                         <Route path="/" Component={HomePage} />
                         <Route path="/AboutUs" Component={AboutusPage} />
                         <Route path="/Products" Component={ProductPage} />
+                        <Route path="/Products/:id" Component={SingleProductPage} />
                     </Route>
                 </Routes>
             </BrowserRouter>
