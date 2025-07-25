@@ -29,7 +29,7 @@ export default function SingleProductPage() {
                 <div className="col-12">
                     <div className="card h-100 mb-3">
                         {isLoading && <p>Loading. We are fetching the datas from the server. Wait a second please...</p>}
-                        {!isLoading && <div className="row">
+                        {singleProduct && <div className="row">
                             <div className="col-md-4">
                                 <img
                                     src={singleProduct.image}
