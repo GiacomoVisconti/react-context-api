@@ -1,20 +1,7 @@
-import { useState, useEffect } from "react";
 import ProductList from "../components/ProductList";
-import ProductCard from "../components/ProductCard";
 
 export default function ProductPage() {
-    const url = "https://fakestoreapi.com/products";
-    const [products, setProducts] = useState([]);
 
-    useEffect(() => {
-        fetch(url)
-            .then((res) => res.json())
-            .then((data) => {
-                console.log(data);
-
-                setProducts(data);
-            });
-    }, []);
 
     return (
         <>
@@ -37,16 +24,7 @@ export default function ProductPage() {
             {/* Products List */}
             <div className="container mt-5">
                 <div className="row g-4">
-                    {/* <ProductList productsData={productsData} /> */}
-                    {products.map((product, index) => {
-
-                        return (
-
-                            <ProductCard product={product} index={index} />
-                        )
-
-
-                    })}
+                    <ProductList />
                 </div>
             </div>
         </>
